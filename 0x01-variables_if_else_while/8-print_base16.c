@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+/**
+ * main - prints out function below
+ *
+ * Return: 0
+ */
+
+int main(void)
+{
+	int i;
+	char h;
+
+	for (i = 0 ; i < 10 ; i++)
+		putchar(i + '0');
+	for (h = 'a' ; h <= 'f' ; h++)
+		putchar(i);
+	putchar('\n');
+	return (0);
+}
