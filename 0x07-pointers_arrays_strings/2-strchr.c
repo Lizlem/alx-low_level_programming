@@ -12,12 +12,11 @@
 
 char *_strchr(char *s, char c)
 {
-	char *first_c = strchr(s, c);
+	while (*s != '\0')
+	{
+		if (*s == c)
+			return (char *) s;
+	}
 
-	printf("first_c: %s\n", first_c);
-
-	if (first_c == NULL)
-		printf("NULL\n");
-
-	return (0);
+	return (NULL);
 }
