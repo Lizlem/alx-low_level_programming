@@ -16,5 +16,8 @@ char *_strchr(char *s, char c)
 
 	printf("first_c: %s\n", first_c);
 
+	if (first_c == NULL)
+		printf("NULL\n");
+
 	return (0);
 }
